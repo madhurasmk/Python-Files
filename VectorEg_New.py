@@ -82,8 +82,8 @@ def search_and_answer(query, top_k=3):
     print(f"Token count: {token_count}")
 
     from openai import OpenAI
-    client = OpenAI(api_key='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')
-    # client = OpenAI(api_key='sk-proj-uQSDdU85medcLVniY9zyT3BlbkFJeCmlqDo8iSgoHkJBcDiP')  # Assumes OPENAI_API_KEY is set in your environment
+    client = OpenAI(api_key='sk-xxxxx')
+    # client = OpenAI(api_key='sk-xxxxxx')  # Assumes OPENAI_API_KEY is set in your environment
 
     response = client.chat.completions.create(
         model="gpt-3.5-turbo",
@@ -102,3 +102,4 @@ def search_and_answer(query, top_k=3):
 query = input("Enter your question: ")
 answer = search_and_answer(query)
 print(f"\n Answer:\n{answer}")
+

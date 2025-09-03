@@ -12,7 +12,7 @@ import pandas as pd
 import pyodbc
 oaiClient = OpenAI(
   #api_key=os.environ['OPENAI_API_KEY']
-  api_key="sk-proj-uQSDdU85medcLVniY9zyT3BlbkFJeCmlqDo8iSgoHkJBcDiP"
+  api_key="sk-proj-xxxxx"
 )
 model = "gpt-4o"
 assistant_name = "Session Grid Assistant"
@@ -176,3 +176,4 @@ def create_or_update():
 if __name__ == '__main__':
     init_db()
     app.run(debug=True, host="127.0.0.1", port=5002)
+

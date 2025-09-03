@@ -13,8 +13,8 @@ model = SentenceTransformer('all-MiniLM-L6-v2')
 # model = SentenceTransformer('./trained_embedding_model')
 # model = SentenceTransformer('fine_tuned_model')
 
-# openai.api_key = 'sk-proj-uQSDdU85medcLVniY9zyT3BlbkFJeCmlqDo8iSgoHkJBcDiP'
-apiKey = "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"
+# openai.api_key = 'sk-xxxx'
+apiKey = "sk-xxxxx"
 
 # 2. Extract text from PDF
 def extract_text_from_pdf(filePath):
@@ -120,3 +120,4 @@ def search_and_answer(query, top_k=3):
 query = input("Enter your question: ")
 answer = search_and_answer(query)
 print(f"\nAnswer:\n{answer}")
+
